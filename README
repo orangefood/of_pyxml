@@ -1,0 +1,11 @@
+oxml is a very naive XML parser package.  oxml will try to parse even very badly formatted
+XML and HTML.  The main effort is that the parsing should be robust to bad markup.  If you are
+going to parse nice XML then this is not the parser for you.  However if you need to scrape a bit
+of information of an HTML page whose markup is less than standard then oxml may provide a solution.
+
+Like standard XML parsers oxml provides two parser modes, an event mode (think SAX) and a document mode
+(think DOM).  The event mode parser is called oxml.sxml and is of reasonable quality that I am willing to 
+distribute it and use it in other codes I publish.  The document mode parser is called oxml.dxml and
+is experimental.  While it does a reasonable job on well-formed documents it struggles with poorly formed
+documents of the kind found in wide distrobution on the world wide web.  The reason is that the code makes
+some assumption about un matched tags and frankly those assumptions are right as frequently as they are wrong.

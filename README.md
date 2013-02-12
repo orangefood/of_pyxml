@@ -1,2 +1,4 @@
-of_pyxml
-========
+of_xml
+======
+
+A very naive XML parser.
